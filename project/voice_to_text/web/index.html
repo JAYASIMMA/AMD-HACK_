@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voice to Text</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+        h1 { text-align: center; }
+        button { margin: 10px; padding: 10px 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Voice to Text</h1>
+        <select id="language">
+            <option value="en-US">English</option>
+            <option value="ta-IN">Tamil</option>
+        </select>
+        <br>
+        <button onclick="startRecording()">Start Recording</button>
+        <button onclick="stopRecording()">Stop Recording</button>
+        <br>
+        <h2>Transcription:</h2>
+        <p id="transcription">No transcription yet.</p>
+        <br>
+        <input type="text" id="fileName" placeholder="Enter file name" />
+        <button onclick="saveTranscription()">Save</button>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

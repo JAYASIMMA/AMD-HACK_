@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voice Assistant</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript">
+        async function sendQuery() {
+            let query = document.getElementById('query').value;
+            document.getElementById('query').value = '';
+            let response = await eel.on_query_enter(query)();
+            document.getElementById('response').innerText = response;
+        }
+
+        async function toggleLanguage() {
+            let button = document.getElementById('langButton');
+            button.innerText = await eel.toggle_language()();
+        }
+    </script>
+</head>
+<body>
+    <h1>Voice Assistant</h1>
+    <input type="text" id="query" placeholder="Ask me anything" onkeydown="if(event.key === 'Enter') sendQuery()">
+    <button onclick="sendQuery()">Submit</button>
+    <button id="langButton" onclick="toggleLanguage()">தமிழுக்கு மாற்று</button>
+    <div id="response"></div>
+</body>
+</html>

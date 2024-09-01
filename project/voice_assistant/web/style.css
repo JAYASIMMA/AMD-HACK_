@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+    background-image: url('banner.jpeg'); 
+    padding: 20px;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #07a4ff;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#response {
+    margin-top: 20px;
+    font-size: 18px;
+}

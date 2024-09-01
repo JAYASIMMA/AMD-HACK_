@@ -1,0 +1,7 @@
+ollama
+streamlit
+torch
+sklearn
+matplotlib
+numpy
+pandas

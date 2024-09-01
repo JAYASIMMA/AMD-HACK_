@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    background-image: url('image.jpg'); /* Replace with your local image path */
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+textarea, input, button {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+}
+
+textarea {
+    height: 100px;
+}
+
+input {
+    height: 30px;
+}
+
+button {
+    height: 40px;
+    width: 50%;
+    background-color: #7fc3fa;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
